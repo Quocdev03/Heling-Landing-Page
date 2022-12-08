@@ -1,0 +1,153 @@
+.footer {
+    background-color: $primary-color;
+    padding-top: 90px;
+    position: relative;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        text-decoration: none;
+        color: $white-color;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90px;
+
+        span {
+            font-family: 'Prata';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: calc(32 / 24);
+            color: $white-color;
+            opacity: 0.7;
+        }
+
+        img {
+            width: 30px;
+            height: 27px;
+        }
+    }
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+
+    &-content {
+        width: 100%;
+        max-width: 520px;
+        margin-top: 200px;
+        color: $white-color;
+    }
+
+    &-heading {
+        font-family: 'Prata';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: calc(30 / 30);
+        letter-spacing: -0.02em;
+        margin-bottom: 71px;
+        color: $secondary-color;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 30px;
+            line-height: calc(34 / 30);
+            color: $secondary-color;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        &-item {
+            font-family: 'Prata';
+            font-weight: 400;
+            font-size: 60px;
+            line-height: calc(72 / 60);
+            color: $secondary-color;
+            opacity: 0.7;
+            margin-bottom: 50px;
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1265px;
+        width: 100%;
+        padding-bottom: 45px;
+
+        &-year {
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: calc(32 / 24);
+            color: $white-color;
+            opacity: 0.4;
+        }
+
+        &-link {
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: calc(30 / 24);
+            color: $white-color;
+            opacity: 0.4;
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+
+        &-main {
+            flex-direction: column;
+            text-align: center;
+            gap: 110px 0;
+        }
+
+        &-bottom {
+            &-year {
+                font-size: 16px;
+                line-height: 32px;
+            }
+
+            &-link {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        &-item {
+            display: none;
+        }
+
+        &-heading {
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+
+        &-info {
+            span {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+
+            &-item {
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+    }
+}

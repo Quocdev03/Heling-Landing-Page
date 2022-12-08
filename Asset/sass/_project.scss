@@ -1,0 +1,115 @@
+.project {
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    &-heading {
+        width: 100%;
+        max-width: 619px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: calc(76 / 70);
+        color: $primary-color;
+    }
+
+    &-all {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: calc(30 / 24);
+        color: $primary-color;
+        letter-spacing: -0.02em;
+        text-decoration: underline;
+        transition: .2s all linear;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+
+    &-item {
+        height: 712px;
+        position: relative;
+    }
+
+    &-image {
+        height: 100%;
+    }
+
+    &-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-info {
+        position: absolute;
+        bottom: 65px;
+        left: calc(10% - 15px);
+        color: $white-color;
+    }
+
+    &-name {
+        font-family: 'DM Sans';
+        font-size: 50px;
+        font-weight: 500;
+        line-height: calc(62 / 50);
+        color: $secondary-color;
+    }
+
+    &-link {
+        font-family: 'Prata';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: calc(30 / 24);
+        letter-spacing: -0.02em;
+        text-decoration-line: underline;
+        color: $secondary-color;
+        transition: .2s all linear;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+
+        &-header {
+            align-items: flex-end;
+            margin-bottom: 50px;
+        }
+
+        &-heading {
+            font-size: 46px;
+            line-height: calc(56 / 46);
+
+        }
+
+        &-all {
+            flex-shrink: 0;
+            font-size: 18px;
+            line-height: calc(30 / 18);
+        }
+
+        &-item {
+            height: 244px;
+        }
+
+        &-info {
+            left: 16px;
+            bottom: 16px;
+        }
+
+        &-name {
+            font-size: 32px;
+        }
+
+        &-link {
+            font-size: 18px;
+        }
+    }
+
+}
